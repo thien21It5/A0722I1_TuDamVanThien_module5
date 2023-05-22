@@ -1,0 +1,17 @@
+<h2 style="text-align: center">Calculator</h2>
+<hr width="100%">
+<div class="mb-3">
+  <label for="first" class="form-label">First number</label>
+  <input #first  type="text" class="form-control" id="first" >
+</div>
+<div class="mb-3">
+  <label for="second" class="form-label">Second number</label>
+  <input #second type="text" class="form-control" id="second" >
+</div>
+
+<button style="margin: 10px 100px 10px 10px" type="button" class="btn btn-primary" (click)="sum(first.value, second.value);">addition</button>
+<button style="margin: 10px 100px 10px 10px" type="button" class="btn btn-secondary" (click)="sub(first.value, second.value);">subtraction</button>
+<button style="margin: 10px 100px 10px 10px" type="button" class="btn btn-success" (click)="multi(first.value, second.value);">multiplication</button>
+<button style="margin: 10px 100px 10px 10px" type="button" class="btn btn-danger" (click)="div(first.value, second.value);">division</button>
+<hr width="100%">
+<p>{{result}}</p>
